@@ -228,19 +228,78 @@ label.formCheckbox {
     margin: 0;
     font-size: clamp(1rem, -10rem + 16vw, 8rem);
 }
-/* Animation for zoom-effekt */
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0);}
-    to {-webkit-transform: scale(1);}
-}
-@keyframes animatezoom {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
-}
+
 .fontStyle__A{
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+.frormTekst{
+    color: #12A0D6; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: clamp(1rem, -4rem + 10vw, 2rem); 
+    font-weight: 700;
+    line-height: normal; 
+    display: flex;
+    justify-content: center;
 
+}
+
+
+
+/* Styling for tablets og iPads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .firstButton {
+        font-size: 2rem; /* Tilpasset skrifttype til tablets */
+    }
+    .supButton {
+        font-size: 1.5rem; /* Tilpasset skrifttype */
+    }
+    .logoSubTit {
+        font-size: 2rem; /* Justeret skrifttype for bedre læsbarhed */
+    }
+    .subTeksts {
+        font-size: 1.2rem;
+    }
+    .formInputField {
+        font-size: 1.5rem; /* Tilpasset input-felt skrifttype */
+    }
+    .formSubmitButton {
+        font-size: 2rem; 
+    }
+    .psw {
+        font-size: 1.2rem; 
+    }
+    .formCheckbox {
+        font-size: 1.2rem; 
+    }
+}
+
+/* Yderligere justering for mindre tablets (typisk 600px-768px) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .firstButton {
+        font-size: 1.8rem;
+    }
+    .supButton {
+        font-size: 1.3rem;
+    }
+    .logoSubTit {
+        font-size: 1.8rem;
+    }
+    .subTeksts {
+        font-size: 1rem;
+    }
+    .formInputField {
+        font-size: 1.2rem;
+    }
+    .formSubmitButton {
+        font-size: 1.8rem;
+    }
+    .psw {
+        font-size: 1rem;
+    }
+    .formCheckbox {
+        font-size: 1rem;
+    }
+}
